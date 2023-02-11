@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25abd11f-38ac-4578-80d5-ee22e68be1a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/api-auth-jwt-go.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/server/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/entity/product.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/entity/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/entity/user_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/entity/id.go" afterDir="false" />
+    <list default="true" id="25abd11f-38ac-4578-80d5-ee22e68be1a9" name="Changes" comment="Add structure of project">
+      <change afterPath="$PROJECT_DIR$/internal/entity/product_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/infra/database/interfaces.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/infra/database/product_db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/infra/database/product_db_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/infra/database/user_db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/infra/database/user_db_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/entity/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/entity/product.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,40 +43,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/miguel",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/miguel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Go Test.TestUser_ValidatePassword in github.com/Miguelm-del/api-auth-jwt-go/internal/entity">
-    <configuration name="TestNewUser in github.com/Miguelm-del/api-auth-jwt-go/internal/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Go Test.TestProduct_FindAll in github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database">
+    <configuration name="TestProduct_Create in github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="api-auth-jwt-go" />
-      <working_directory value="$PROJECT_DIR$/internal/entity" />
+      <working_directory value="$PROJECT_DIR$/internal/infra/database" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="github.com/Miguelm-del/api-auth-jwt-go/internal/entity" />
+      <package value="github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestNewUser\E$" />
+      <pattern value="^\QTestProduct_Create\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestUser_ValidatePassword in github.com/Miguelm-del/api-auth-jwt-go/internal/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestProduct_FindAll in github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="api-auth-jwt-go" />
+      <working_directory value="$PROJECT_DIR$/internal/infra/database" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestProduct_FindAll\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUser_Create in github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="api-auth-jwt-go" />
+      <working_directory value="$PROJECT_DIR$/internal/infra/database" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestUser_Create\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test github.com/Miguelm-del/api-auth-jwt-go/internal/entity" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="api-auth-jwt-go" />
       <working_directory value="$PROJECT_DIR$/internal/entity" />
       <root_directory value="$PROJECT_DIR$" />
@@ -87,13 +109,26 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestUser_ValidatePassword\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="api-auth-jwt-go" />
+      <working_directory value="$PROJECT_DIR$/internal/infra/database" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestUser_ValidatePassword in github.com/Miguelm-del/api-auth-jwt-go/internal/entity" />
-        <item itemvalue="Go Test.TestNewUser in github.com/Miguelm-del/api-auth-jwt-go/internal/entity" />
+        <item itemvalue="Go Test.TestProduct_FindAll in github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
+        <item itemvalue="Go Test.TestProduct_Create in github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
+        <item itemvalue="Go Test.go test github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
+        <item itemvalue="Go Test.TestUser_Create in github.com/Miguelm-del/api-auth-jwt-go/internal/infra/database" />
+        <item itemvalue="Go Test.go test github.com/Miguelm-del/api-auth-jwt-go/internal/entity" />
       </list>
     </recent_temporary>
   </component>
@@ -103,6 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add structure of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add structure of project" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
