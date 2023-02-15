@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25abd11f-38ac-4578-80d5-ee22e68be1a9" name="Changes" comment="Add create product route">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/cb67e7d8-4412-4a26-8cf3-e8c8c2d542b9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/server/test.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/dto/dto.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/infra/webserver/handlers/product_handlers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/infra/webserver/handlers/user_handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb67e7d8-4412-4a26-8cf3-e8c8c2d542b9.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/server/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/server/test.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/entity/user_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/entity/user_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/infra/database/product_db_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/infra/database/product_db_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/dto/dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/dto/dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/infra/webserver/handlers/product_handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/infra/webserver/handlers/product_handlers.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +67,14 @@
   }
 }</component>
   <component name="RunManager" selected="Go Build.go build github.com/Miguelm-del/api-auth-jwt-go/cmd/server">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="api-auth-jwt-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build github.com/Miguelm-del/api-auth-jwt-go/cmd/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="api-auth-jwt-go" />
       <working_directory value="$PROJECT_DIR$" />
@@ -119,6 +130,15 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestProduct_Update\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="api-auth-jwt-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
     <recent_temporary>
