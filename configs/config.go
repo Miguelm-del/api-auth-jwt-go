@@ -32,6 +32,6 @@ func Load(path string) (*conf, error) {
 	if err = viper.Unmarshal(&cfg); err != nil {
 		panic(err)
 	}
-	cfg.TokenAuth = jwtauth.New("H5256", []byte(cfg.JWTSecret), nil)
+	cfg.TokenAuth = jwtauth.New("HS256", []byte(cfg.JWTSecret), nil)
 	return cfg, err
 }
